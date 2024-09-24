@@ -1,1 +1,19 @@
+This is an application that takes in text and outputs an audio file of that text. Written with US-English in mind, so it might not convert as expected for other languages.
 
+My deployed version here. Feel free to add your own things to convert to audio, download files, and delete files.
+
+Technologies Used
+Node
+ReactJS
+AWS
+AWS SAM
+CloudFormation
+S3
+API Gateway (HTTP API)
+Lambda
+DynamoDB
+Polly
+CodeBuild
+
+trying to figure out what technology I need to use for the backend service and frontend service. What type of code for backend and frontend
+what kin
