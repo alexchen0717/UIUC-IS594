@@ -1,0 +1,17 @@
+1. Create an AWS Account 
+
+2. Set Up IAM Roles and Permissions
+
+Create an IAM Role that has the necessary permissions to interact with Amazon Polly, S3, DynamoDB, and API Gateway.
+Ensure that the role allows Lambda to assume the necessary policies for these services.
+
+3. Create an S3 Bucket for Frontend and File Storage
+
+Create two S3 buckets:
+Frontend: This bucket will store your static website files (HTML, CSS, JS).
+FileStore: This bucket will store the uploaded files from the users.
+Enable static website hosting on the Frontend bucket.
+4. Set Up Amazon Polly
+
+Familiarize yourself with Amazon Polly.
+Set up Polly to be ready for integration with Lambda, using the AWS console to experiment with different voices and languages.
