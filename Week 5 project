@@ -6,14 +6,19 @@ Technologies Used
 Node
 ReactJS
 AWS
-AWS SAM
-CloudFormation
-S3
+AWS SAM (AWS serverless application model)
+CloudFormation (infra -as code management tool)
+S3 (cloud object storage)
 API Gateway (HTTP API)
-Lambda
-DynamoDB
-Polly
-CodeBuild
+Lambda 
+DynamoDB (NoSQL database)
+Polly 
+CodeBuild (Continue Integration server)
 
 trying to figure out what technology I need to use for the backend service and frontend service. What type of code for backend and frontend
 what kin
+
+what i DID: figuring out the tools and filling up the wardley map
+drawback: career events and unfamiliar with some code
+what I should complete next week: understand node, tryna enroll, and finish my AWS certification. finish setting up the architecture of 
+my AWS speech converter
