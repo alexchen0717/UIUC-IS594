@@ -1,4 +1,4 @@
-1. Create an AWS Account 
+1. set up the architecture on my AWS console 
 
 2. Set Up IAM Roles and Permissions
 
@@ -8,10 +8,26 @@ Ensure that the role allows Lambda to assume the necessary policies for these se
 3. Create an S3 Bucket for Frontend and File Storage
 
 Create two S3 buckets:
-Frontend: This bucket will store your static website files (HTML, CSS, JS).
+Frontend: This bucket will store my static website files (HTML, CSS, JS).
 FileStore: This bucket will store the uploaded files from the users.
 Enable static website hosting on the Frontend bucket.
 4. Set Up Amazon Polly
 
-Familiarize yourself with Amazon Polly.
+Familiarize myself with Amazon Polly.
 Set up Polly to be ready for integration with Lambda, using the AWS console to experiment with different voices and languages.
+
+
+following tasks: 
+Frontend Setup:
+
+1. Develop the website (frontend) with HTML, CSS, and JavaScript.
+Set up the UI that allows users to upload files, select voice options, and trigger the text-to-speech conversion.
+Deploy the static assets (HTML/CSS/JS) to the Frontend S3 Bucket.
+Set Up API Gateway (HttpApi):
+
+2. Create an API Gateway with HTTP APIs that will handle requests from the frontend to Lambda functions (for file uploads, deletions, listing files, and retrieving voices from Polly).
+Define routes for different actions:
+POST /file: To upload a file (for CreateNewFile Lambda).
+DELETE /file/{id}: To delete a file (for DeleteFile Lambda).
+GET /voices: To retrieve the available voices (for GetVoices Lambda).
+GET /file: To list uploaded files (for ListFiles Lambda).
