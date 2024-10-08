@@ -1,1 +1,48 @@
+Project Update: AWS Serverless Text-to-Speech Converter
+Progress This Week: Frontend Setup
+Frontend Website Development
 
+1. Created the HTML, CSS, and JavaScript files for a static website.
+The website includes:
+An upload form for users to upload text files.
+A voice selection dropdown, which will be populated with voices from Amazon Polly.
+Action buttons for file upload, listing files, and file deletion.
+2. S3 Bucket Configuration for Hosting
+
+Created an S3 bucket named text-to-speech-frontend to host the website.
+Enabled static website hosting on the bucket.
+Configured the index document to be index.html.
+Uploading and Configuring Website Files
+
+Uploaded all frontend files (HTML, CSS, JS) to the S3 bucket.
+Set public read permissions on the bucket to allow access to the website.
+Configured the Bucket Policy to make the files accessible publicly.
+Testing the Frontend
+
+Accessed the static website through the S3 bucket’s URL.
+Verified that the website loads correctly and the basic interface is functioning.
+Confirmed the presence of the upload form, dropdown for voice selection, and action buttons.
+Challenges Encountered
+Figuring out the correct permissions for public access on the S3 bucket. Ensured that the Bucket Policy allows public read access while keeping it secure.
+Plans for Next Week: API Gateway Setup
+Creating and Configuring API Gateway
+
+I will set up API Gateway with resources and methods for the following actions:
+POST /file for file uploads.
+GET /file for listing files.
+DELETE /file/{id} for deleting files by ID.
+GET /voices for retrieving available voices from Amazon Polly.
+Integrating API Gateway with Lambda Functions
+
+Each API Gateway endpoint will be connected to a corresponding Lambda function.
+The Lambda functions will handle actions such as file upload, file deletion, and voice retrieval.
+Enabling CORS for API Gateway
+
+I will enable Cross-Origin Resource Sharing (CORS) on the API Gateway endpoints to ensure the frontend can make requests without issues.
+Testing the API Endpoints
+
+After setting up API Gateway, I’ll test each endpoint using Postman or the API Gateway test console to ensure correct functionality.
+I’ll then update the frontend JavaScript to call the correct API URLs.
+Anticipated Challenges
+Configuring Lambda functions to handle different API Gateway methods.
+Ensuring CORS is correctly set up so the frontend can communicate seamlessly with the backend services.
