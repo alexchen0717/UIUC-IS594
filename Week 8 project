@@ -1,0 +1,43 @@
+Progress This Week: API Gateway Setup
+
+	1.	Creating the API in API Gateway
+	•	Set up a REST API in API Gateway named TextToSpeechAPI.
+	•	Configured resources and methods to handle different actions:
+	•	POST /file for uploading files.
+	•	GET /file for listing available files.
+	•	DELETE /file/{id} for deleting files by ID.
+	•	GET /voices for retrieving available voices from Amazon Polly.
+	2.	Integrating API Gateway with Lambda Functions
+	•	Linked each API endpoint to its corresponding Lambda function:
+	•	The CreateNewFile Lambda handles file uploads.
+	•	The ListFiles Lambda retrieves a list of files.
+	•	The DeleteFile Lambda removes files from storage.
+	•	The GetVoices Lambda retrieves voice options from Amazon Polly.
+	3.	Enabling and Configuring CORS
+	•	Enabled Cross-Origin Resource Sharing (CORS) for all API endpoints.
+	•	Ensured that the frontend can communicate with the backend without encountering CORS issues.
+	4.	Testing the API Endpoints
+	•	Tested each API endpoint using Postman and the API Gateway test console.
+	•	Verified that:
+	•	File uploads via POST /file store files correctly.
+	•	GET /file returns a list of uploaded files.
+	•	DELETE /file/{id} successfully deletes files.
+	•	GET /voices retrieves voice options from Polly.
+
+Challenges Encountered
+
+	•	Ensuring correct integration between API Gateway and Lambda functions, particularly around path parameters for file deletion.
+	•	Configuring CORS settings properly to avoid issues with the frontend accessing the API.
+
+Plans for Next Week: DynamoDB Setup
+
+	1.	Creating and Configuring a DynamoDB Table
+	•	I will set up a DynamoDB table to store metadata for the uploaded files (e.g., file names, timestamps, and IDs).
+	•	Define the table schema, including primary keys and any necessary indexes.
+	2.	Integrating DynamoDB with Lambda Functions
+	•	Modify the CreateNewFile Lambda to store file metadata in DynamoDB upon upload.
+	•	Update the ListFiles Lambda to retrieve file metadata from DynamoDB.
+	•	Ensure DeleteFile Lambda removes metadata from DynamoDB when a file is deleted.
+	3.	Testing DynamoDB Integration
+	•	I will test each Lambda function to verify that data is correctly stored, retrieved, and deleted in DynamoDB.
+	•	Use CloudWatch Logs to monitor and troubleshoot any issues during the testing phase.
