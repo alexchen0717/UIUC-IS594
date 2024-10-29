@@ -1,1 +1,17 @@
+Project Update: AWS Serverless Text-to-Speech Converter
+Progress This Week: DynamoDB Setup
+	1.	Creating the DynamoDB Table
+	•	Set up a DynamoDB table to store file metadata, including fields such as:
+	•	File ID (primary key).
+	•	File name.
+	•	Timestamp of file upload.
+	•	Status (whether the file has been processed).
+	2.	Integrating DynamoDB with Lambda Functions
+	•	Modified Lambda functions to interact with DynamoDB:
+	•	CreateNewFile Lambda now stores file metadata in DynamoDB after a successful file upload.
+	•	ListFiles Lambda retrieves file metadata from DynamoDB to display a list of files to the user.
+	•	DeleteFile Lambda deletes both the file and its metadata from DynamoDB upon file removal.
+	3.	Challenges Encountered
+	•	Fine-tuning the DynamoDB table schema to efficiently handle metadata queries, ensuring that the table structure could scale with multiple uploads.
+	•	Ensuring Lambda permissions were correctly set to allow seamless interaction with DynamoDB.
 
