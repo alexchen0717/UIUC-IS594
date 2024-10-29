@@ -1,0 +1,21 @@
+Project Update: AWS Serverless Text-to-Speech Converter
+Progress This Week: DynamoDB Integration Testing and Frontend-Backend Finalization
+DynamoDB Integration Testing
+Successfully tested the integration between Lambda functions and DynamoDB to ensure that:
+File metadata (file ID, name, timestamp, and status) is accurately stored in DynamoDB upon file upload.
+File listing and deletion operations interact correctly with DynamoDB, updating and retrieving data as expected.
+Monitored CloudWatch Logs for troubleshooting and verification, confirming that the Lambda functions handle DynamoDB queries efficiently and without errors.
+Finalizing Frontend Interaction with Backend
+Completed the frontend JavaScript setup to interact seamlessly with API Gateway endpoints:
+File upload, file listing, and file deletion functionalities are now fully integrated and operational.
+The voice selection dropdown is now connected to the GetVoices Lambda, allowing users to choose voices dynamically retrieved from Amazon Polly.
+Verified that users can upload a file, select a voice, and see the file list update in real-time.
+Challenges Encountered
+Ensuring that frontend AJAX requests were correctly configured to handle API Gateway responses, especially with CORS settings.
+Fine-tuning Lambda function response formats to provide meaningful feedback to the frontend for user interactions.
+
+Next Steps to Complete the Project
+Polly Integration for Text-to-Speech
+Finalize the connection between the selected text files and Amazon Polly:
+Modify the ListFiles Lambda to send selected file content and voice parameters to Polly for text-to-speech conversion.
+Ensure the resulting audio file is stored in S3 and made available for download or playback on the frontend.
