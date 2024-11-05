@@ -1,0 +1,17 @@
+Project Update: AWS Serverless Text-to-Speech Converter
+Progress This Week: Polly Integration and End-to-End Workflow Testing
+Polly Integration for Text-to-Speech Conversion
+
+Successfully integrated Amazon Polly to convert text files into speech:
+Configured the ListFiles Lambda function to send selected file content along with the chosen voice parameter to Amazon Polly.
+Set up Polly to generate audio output and store it in the S3 bucket for playback or download.
+Confirmed that Polly accurately processes text files and produces high-quality audio in the desired format.
+End-to-End Workflow Testing
+
+Conducted comprehensive testing of the entire system to validate the complete user workflow:
+Verified that users can upload a text file, select a voice, convert the text to speech, and download or listen to the audio file.
+Tested the interactions between the frontend and backend components, including S3, API Gateway, Lambda functions, DynamoDB, and Polly, ensuring smooth and accurate data flow.
+Addressed minor issues discovered during testing, such as response delays and formatting inconsistencies, to improve the user experience.
+Challenges Encountered
+Optimizing the Polly response format to ensure compatibility with the frontend audio playback.
+Debugging issues related to data flow between components to maintain reliable and efficient service across all AWS integrations.
